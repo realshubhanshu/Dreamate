@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamate Products | Premium Mattresses</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+ <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+</head>
+<body class="products-page">
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html#hero" class="logo">
+      <img src="assets/images/logo.png" alt="Dreamate Logo" class="logo-img">
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="products.html" class="nav-link">Products</a></li>
+      <li><a href="technology.html" class="nav-link">Technology</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO / INTRO -->
+<section class="hero">
+    <div class="hero-bg">
+        <img src="assets/images/hero/background.png" alt="Dreamate Mattress Range" class="hero-bg-img">
+    </div>
+    <div class="hero-content">
+        <h1 class="hero-title">
+            <span class="hero-word">Find</span>
+            <span class="hero-word">Your</span>
+            <span class="hero-word">Perfect</span>
+            <span class="hero-word">Mattress</span>
+        </h1>
+        <p class="hero-subtitle">
+            A curated range of mattresses engineered for different sleep styles, comfort preferences, and room setups.
+        </p>
+        <button class="cta-btn hero-cta" onclick="document.getElementById('product-list').scrollIntoView({ behavior: 'smooth' });">
+            View All Models
+        </button>
+    </div>
+</section>
+
+<!-- PRODUCT OVERVIEW TAGS -->
+<section class="why-choose">
+    <div class="container">
+        <h2 class="section-title text-center">Choose by What Matters</h2>
+        <p class="section-subtitle text-center">
+            Every Dreamate mattress is built on spinal support, pressure relief, and durability. You choose the feel and format that fits your life.
+        </p>
+
+        <div class="reasons-grid">
+            <div class="reason-card">
+                <div class="reason-icon">S</div>
+                <h3>Spinal Support</h3>
+                <p>Matrices with zoned support and balanced firmness for posture and back care.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">C</div>
+                <h3>Comfort Feel</h3>
+                <p>Options from plush to firm so you can match your exact sleep preference.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">T</div>
+                <h3>Technology</h3>
+                <p>Hybrid spring, advanced foams, and cooling features depending on the model.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCT LIST -->
+<section class="products" id="product-list">
+    <div class="container">
+        <h2 class="section-title text-center">Our Mattress Range</h2>
+        <p class="section-subtitle text-center">
+            Explore the full Dreamate lineup and find the model that matches your sleep style and room setup.
+        </p>
+
+        <!-- ELEVATE POCKET SPRING -->
+        <div class="product-showcase">
+            <div class="product-content">
+                <span class="product-label">Premium Collection</span>
+                <h3 class="product-name">Elevate Pocket Spring Mattress</h3>
+                <p class="product-description">
+                    Our flagship mattress with individually encased pocket springs and a plush comfort system for couples, light sleepers, and anyone who wants luxury hotel-style support at home.
+                </p>
+                <ul class="product-features">
+                    <li>✓ 7-zone pocket spring support for full-body alignment</li>
+                    <li>✓ High-density comfort foams for pressure relief</li>
+                    <li>✓ Excellent motion isolation for undisturbed sleep</li>
+                    <li>✓ Premium quilted top with breathable fabric</li>
+                    <li>✓ Ideal for master bedrooms and long-term use</li>
+                </ul>
+            </div>
+            <div class="product-image">
+                <img src="assets/images/products/elevate-pocket-spring-main.jpg" alt="Elevate Pocket Spring Mattress" class="product-img">
+            </div>
+        </div>
+
+        <!-- XPERTGRID -->
+        <div class="product-showcase alt">
+            <div class="product-image">
+                <img src="assets/images/products/xpertgrid-main.jpg" alt="XpertGrid Mattress" class="product-img">
+            </div>
+            <div class="product-content">
+                <span class="product-label">Cooling Performance</span>
+                <h3 class="product-name">XpertGrid Mattress</h3>
+                <p class="product-description">
+                    Designed for warm sleepers and humid climates, XpertGrid combines responsive support layers with advanced airflow channels and cooling comfort.
+                </p>
+                <ul class="product-features">
+                    <li>✓ XpertGrid foam with integrated airflow grooves</li>
+                    <li>✓ Cooler surface feel ideal for hot nights</li>
+                    <li>✓ Targeted pressure relief for shoulders and hips</li>
+                    <li>✓ Great for AC and non-AC bedrooms</li>
+                    <li>✓ Hypoallergenic construction</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- DREAMPOD -->
+        <div class="product-showcase">
+            <div class="product-content">
+                <span class="product-label">Everyday Comfort</span>
+                <h3 class="product-name">Dreampod Mattress</h3>
+                <p class="product-description">
+                    A balanced all-rounder that blends support and softness, making it a reliable choice for families and guest rooms.
+                </p>
+                <ul class="product-features">
+                    <li>✓ Medium-firm comfort profile for all sleep positions</li>
+                    <li>✓ Foam layering tuned for everyday use</li>
+                    <li>✓ Edge support for full usable surface</li>
+                    <li>✓ Comfortable for back, side, and combo sleepers</li>
+                    <li>✓ Ideal for primary and secondary bedrooms</li>
+                </ul>
+            </div>
+            <div class="product-image">
+                <img src="assets/images/products/dreampod-main.jpg" alt="Dreampod Mattress" class="product-img">
+            </div>
+        </div>
+
+        <!-- DUAL COMFORT -->
+        <div class="product-showcase alt">
+            <div class="product-image">
+                <img src="assets/images/products/dual-comfort-main.jpg" alt="Dual Comfort Mattress" class="product-img">
+            </div>
+            <div class="product-content">
+                <span class="product-label">Two-in-One Feel</span>
+                <h3 class="product-name">Dual Comfort Mattress</h3>
+                <p class="product-description">
+                    A reversible mattress with a softer side and a firmer side, giving you flexibility as your preferences or room conditions change.
+                </p>
+                <ul class="product-features">
+                    <li>✓ Dual-sided firmness: soft and firm in one</li>
+                    <li>✓ Easy to flip for a different sleep experience</li>
+                    <li>✓ Great for guest rooms or changing needs</li>
+                    <li>✓ Supportive core with comfortable surface feel</li>
+                    <li>✓ Value-friendly without compromising essentials</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ROLLUP -->
+        <div class="product-showcase">
+            <div class="product-content">
+                <span class="product-label">Compact & Practical</span>
+                <h3 class="product-name">Rollup Mattress</h3>
+                <p class="product-description">
+                    Delivered in a compact, roll-packed format for easy movement through tight staircases, doors, and apartments—without sacrificing support.
+                </p>
+                <ul class="product-features">
+                    <li>✓ Roll-packed for convenient shifting and setup</li>
+                    <li>✓ Expands to full performance within hours</li>
+                    <li>✓ Supportive foam core for daily use</li>
+                    <li>✓ Ideal for city homes and rented spaces</li>
+                    <li>✓ Easy to carry, place, and reposition</li>
+                </ul>
+            </div>
+            <div class="product-image">
+                <img src="assets/images/products/rollup-main.jpg" alt="Rollup Mattress" class="product-img">
+            </div>
+        </div>
+
+        <!-- FLEXAGON TRIFOLD -->
+        <div class="product-showcase alt">
+            <div class="product-image">
+                <img src="assets/images/products/flexagon-trifold-main.jpg" alt="Flexagon Trifold Mattress" class="product-img">
+            </div>
+            <div class="product-content">
+                <span class="product-label">Multi-Purpose Living</span>
+                <h3 class="product-name">Flexagon Trifold Mattress</h3>
+                <p class="product-description">
+                    A versatile trifold design that works as a full mattress, a guest bed, a day lounger, or a floor seating solution—perfect for modern, flexible spaces.
+                </p>
+                <ul class="product-features">
+                    <li>✓ Three-panel foldable construction</li>
+                    <li>✓ Easy to store when not in use</li>
+                    <li>✓ Great for guests, studio apartments, and lounges</li>
+                    <li>✓ Stable support in both flat and folded positions</li>
+                    <li>✓ Light enough to move, strong enough to last</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SIMPLE INFO / FAQ STYLE SECTION -->
+<section class="technology">
+    <div class="container">
+        <h2 class="section-title text-center">Finding the Right Dreamate Mattress</h2>
+        <p class="section-subtitle text-center">
+            Not sure where to start? Use these simple guidelines as a quick reference before you choose.
+        </p>
+
+        <div class="tech-specs">
+            <div class="specs-content">
+                <div class="spec-item">
+                    <h4>For Back Support</h4>
+                    <p>
+                        Elevate or Dreampod are ideal if your priority is balanced spinal alignment and long-lasting core support.
+                    </p>
+                </div>
+                <div class="spec-item">
+                    <h4>For Cooler Sleep</h4>
+                    <p>
+                        XpertGrid is designed especially for warm climates and hot sleepers needing better airflow and temperature control.
+                    </p>
+                </div>
+                <div class="spec-item">
+                    <h4>For Flexible Spaces</h4>
+                    <p>
+                        Dual Comfort, Rollup, and Flexagon are great for guest rooms, rented homes, or multi-purpose rooms that change often.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA TO CONTACT -->
+<section class="contact">
+    <div class="container">
+        <h2 class="section-title text-center">Need Help Choosing?</h2>
+        <p class="section-subtitle text-center">
+            Tell us your room size, sleep style, and preferences, and we’ll suggest the best Dreamate model for you.
+        </p>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h3>Talk to a Sleep Advisor</h3>
+                <p>Get a quick recommendation over a phone call.</p>
+                <a href="tel:+919876543210" class="contact-link">+91 98765 43210</a>
+            </div>
+            <div class="contact-card">
+                <h3>Request Product Details</h3>
+                <p>Ask for size charts, thickness options, and warranty information.</p>
+                <a href="mailto:hello@dreamate.com" class="contact-link">hello@dreamate.com</a>
+            </div>
+            <div class="contact-card">
+                <h3>Visit a Partner Store</h3>
+                <p>Experience Dreamate mattresses in person at select locations.</p>
+                <p class="contact-address">Contact us to know nearby partners.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-wave"></div>
+
+  <div class="footer-top">
+    
+    <!-- Brand / About -->
+    <div class="footer-col footer-col--brand">
+      <a href="index.html#hero" class="brand-link">
+        <div class="footer-logo-row">
+          <div class="footer-logo">
+            <img src="assets/images/logo.png" alt="Dreamate logo" />
+          </div>
+          <div class="footer-brand-text">
+            <span class="footer-brand-name">Dreamate</span>
+            <span class="footer-brand-tagline">
+              Luxury Mattress · NapNest Industries Private Limited
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <p class="footer-description">
+        Mattresses thoughtfully designed to support natural spinal alignment, relieve pressure points and maintain a clean, hygienic sleep surface.
+      </p>
+
+      <div class="footer-social">
+        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="footer-social-link footer-social-link--facebook">
+          <span class="footer-social-icon">
+            <i class="fab fa-facebook-f"></i>
+          </span>
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="footer-social-link footer-social-link--instagram">
+          <span class="footer-social-icon">
+            <i class="fab fa-instagram"></i>
+          </span>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-social-link footer-social-link--linkedin">
+          <span class="footer-social-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick links -->
+    <div class="footer-col">
+      <h3 class="footer-heading">Quick Links</h3>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Dreamate</a></li>
+        <li><a href="products.html">Mattress Range</a></li>
+        <li><a href="technology.html">Technology</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Company info -->
+    <div class="footer-col">
+      <h3 class="footer-heading">Company</h3>
+      <ul class="footer-meta-list">
+        <li>
+          <span class="footer-meta-label">Registered Name</span>
+          <span class="footer-meta-value">NapNest Industries Private Limited</span>
+        </li>
+        <li>
+          <span class="footer-meta-label">GST</span>
+          <span class="footer-meta-value">09AAKCN6823H1Z4</span>
+        </li>
+        <li>
+          <span class="footer-meta-label">CIN</span>
+          <span class="footer-meta-value">U31005UP2025PTC228847</span>
+        </li>
+      </ul>
+
+    <!-- Made in India badge -->
+    <div class="footer-made-in-india">
+      <img
+        src="assets/images/madeinindia.png"
+        alt="Made in India"
+        class="footer-made-logo"
+      />
+      <div class="footer-made-text-block">
+        <span class="footer-made-line-small">MAKE IN</span>
+        <span class="footer-made-line-big">INDIA</span>
+      </div>
+    </div>
+  </div>
+
+    <!-- Contact details -->
+    <div class="footer-col">
+      <h3 class="footer-heading">Contact Us</h3>
+      <ul class="footer-meta-list">
+        <li>
+          <span class="footer-meta-label">Call / WhatsApp</span>
+          <span class="footer-meta-value">
+            <a href="tel:+910000000000">+91 00000 00000</a>
+          </span>
+        </li>
+        <li>
+          <span class="footer-meta-label">Email</span>
+          <span class="footer-meta-value">
+            <a href="mailto:info@dreamate.in">info@dreamate.in</a>
+          </span>
+        </li>
+        <li>
+          <span class="footer-meta-label">Address</span>
+          <span class="footer-meta-value">
+            Shed No. F, Part of Property Gata No. 2, 3, 4, 5, 6, 8,<br />
+            Village Rajarampur, Sikandarabad Industrial Area,<br />
+            District Bulandshahr, Uttar Pradesh – 203206, India.
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span class="footer-bottom-text">
+      © 2024–2026 Dreamate · NapNest Industries Private Limited. All rights reserved.
+    </span>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+</body>
+</html>

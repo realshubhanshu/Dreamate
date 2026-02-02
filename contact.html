@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Dreamate | Enquiries & Support</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  
+<!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+</head>
+<body class="contact-page">
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html#hero" class="logo">
+      <img src="assets/images/logo.png" alt="Dreamate Logo" class="logo-img">
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="products.html" class="nav-link">Products</a></li>
+      <li><a href="technology.html" class="nav-link">Technology</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <img src="assets/images/hero/hero-mattress-lifestyle.jpg" alt="Contact Dreamate" class="hero-bg-img">
+  </div>
+  <div class="hero-content">
+    <h1 class="hero-title">
+      <span class="hero-word">Let’s</span>
+      <span class="hero-word">Talk</span>
+      <span class="hero-word">About</span>
+      <span class="hero-word">Sleep.</span>
+    </h1>
+    <p class="hero-subtitle">
+      Whether you’re buying one mattress or planning a project, share a few details and we’ll guide you to the right Dreamate solution.
+    </p>
+  </div>
+</section>
+
+<!-- MAIN CONTACT SECTION -->
+<main>
+  <section class="section section--padded contact-main">
+    <div class="section-grid">
+      <!-- Left: form -->
+      <div class="section-col">
+        <div class="contact-form-card">
+          <h2 class="section-title">Send us an enquiry</h2>
+          <p class="body-text">
+            Share a few details and we will get back to you with recommendations, pricing, and next steps.
+          </p>
+
+          <!-- Status message -->
+          <div id="form-status" class="form-status" aria-live="polite"></div>
+
+          <!-- IMPORTANT: normal form POST so e.parameter works -->
+          <form
+            class="contact-form"
+            id="contact-form"
+            method="POST"
+            action="https://script.google.com/macros/s/AKfycbyrg-pyOyKjhM3RVbg7XiPRk_CVySygwBc3wQGB1Qc6LQhMgK9QgoIp1RV8VTkc2YY4/exec"
+            target="hidden_iframe"
+          >
+            <div class="form-row">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="topic">I am interested in</label>
+              <select id="topic" name="topic" required>
+                <option value="">Select an option</option>
+                <option value="single-mattress">Single mattress purchase</option>
+                <option value="multiple-mattress">Multiple / bulk purchase</option>
+                <option value="dealership">Dealership / distribution</option>
+                <option value="support">After-sales support</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="message">Tell us a bit more</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Share your preferred size, firmness, quantity, or any specific questions."
+                required
+              ></textarea>
+            </div>
+            <div class="form-row form-row-inline">
+              <div class="checkbox-field">
+                <input type="checkbox" id="whatsapp" name="whatsapp" value="true" />
+                <label for="whatsapp">Contact me on WhatsApp as well</label>
+              </div>
+            </div>
+            <button type="submit" class="cta-btn" id="submit-btn">
+              <span>Submit Enquiry</span>
+            </button>
+          </form>
+
+          <!-- Hidden iframe to avoid leaving your site -->
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+        </div>
+      </div>
+
+      <!-- Right: company details -->
+      <div class="section-col">
+        <div class="contact-info-card">
+          <p class="section-label">Reach Us</p>
+          <h2 class="section-title">Dreamate · NapNest Industries Private Limited</h2>
+
+          <div class="contact-block contact-block--meta">
+            <div>
+              <span class="meta-label">Registered Address</span>
+              <span class="meta-value">
+                Shed No. F, Part of Property Gata No. 2, 3, 4, 5, 6, 8,<br />
+                Village Rajarampur, Sikandarabad Industrial Area,<br />
+                District Bulandshahr, Uttar Pradesh – 203206, India.
+              </span>
+            </div>
+            <div>
+              <span class="meta-label">GST Number</span>
+              <span class="meta-value">09AAKCN6823H1Z4</span>
+            </div>
+            <div>
+              <span class="meta-label">CIN</span>
+              <span class="meta-value">U31005UP2025PTC228847</span>
+            </div>
+          </div>
+
+          <div class="contact-block">
+            <span class="meta-label">Phone</span>
+            <span class="meta-value">Add your primary phone / WhatsApp number here</span>
+          </div>
+
+          <div class="contact-block">
+            <span class="meta-label">Email</span>
+            <span class="meta-value">Add your official email address here</span>
+          </div>
+
+          <div class="contact-block">
+            <span class="meta-label">Business Hours</span>
+            <span class="meta-value">You can mention your working hours here (e.g., Mon–Sat, 10:00 AM–7:00 PM).</span>
+          </div>
+
+          <div class="contact-block">
+            <span class="meta-label">Quick links</span>
+            <span class="meta-value">
+              <a href="products.html">View product range</a> ·
+              <a href="about.html">About Dreamate</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-wave"></div>
+
+  <div class="footer-top">
+    
+    <!-- Brand / About -->
+    <div class="footer-col footer-col--brand">
+      <a href="index.html" class="brand-link">
+        <div class="footer-logo-row">
+          <div class="footer-logo">
+            <img src="assets/images/logo.png" alt="Dreamate logo" />
+          </div>
+          <div class="footer-brand-text">
+            <span class="footer-brand-name">Dreamate</span>
+            <span class="footer-brand-tagline">
+              Luxury Mattress · NapNest Industries Private Limited
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <p class="footer-description">
+        Mattresses thoughtfully designed to support natural spinal alignment, relieve pressure points and maintain a clean, hygienic sleep surface.
+      </p>
+
+      <div class="footer-social">
+        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="footer-social-link footer-social-link--facebook">
+          <span class="footer-social-icon">
+            <i class="fab fa-facebook-f"></i>
+          </span>
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="footer-social-link footer-social-link--instagram">
+          <span class="footer-social-icon">
+            <i class="fab fa-instagram"></i>
+          </span>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer-social-link footer-social-link--linkedin">
+          <span class="footer-social-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick links -->
+    <div class="footer-col">
+      <h3 class="footer-heading">Quick Links</h3>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Dreamate</a></li>
+        <li><a href="products.html">Mattress Range</a></li>
+        <li><a href="technology.html">Technology</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Company info -->
+    <div class="footer-col">
+      <h3 class="footer-heading">Company</h3>
+      <ul class="footer-meta-list">
+        <li>
+          <span class="footer-meta-label">Registered Name</span>
+          <span class="footer-meta-value">NapNest Industries Private Limited</span>
+        </li>
+        <li>
+          <span class="footer-meta-label">GST</span>
+          <span class="footer-meta-value">09AAKCN6823H1Z4</span>
+        </li>
+        <li>
+          <span class="footer-meta-label">CIN</span>
+          <span class="footer-meta-value">U31005UP2025PTC228847</span>
+        </li>
+      </ul>
+
+    <!-- Made in India badge -->
+    <div class="footer-made-in-india">
+      <img
+        src="assets/images/madeinindia.png"
+        alt="Made in India"
+        class="footer-made-logo"
+      />
+      <div class="footer-made-text-block">
+        <span class="footer-made-line-small">MAKE IN</span>
+        <span class="footer-made-line-big">INDIA</span>
+      </div>
+    </div>
+  </div>
+
+    <!-- Contact details -->
+    <div class="footer-col">
+      <h3 class="footer-heading">Contact Us</h3>
+      <ul class="footer-meta-list">
+        <li>
+          <span class="footer-meta-label">Call / WhatsApp</span>
+          <span class="footer-meta-value">
+            <a href="tel:+910000000000">+91 00000 00000</a>
+          </span>
+        </li>
+        <li>
+          <span class="footer-meta-label">Email</span>
+          <span class="footer-meta-value">
+            <a href="mailto:info@dreamate.in">info@dreamate.in</a>
+          </span>
+        </li>
+        <li>
+          <span class="footer-meta-label">Address</span>
+          <span class="footer-meta-value">
+            Shed No. F, Part of Property Gata No. 2, 3, 4, 5, 6, 8,<br />
+            Village Rajarampur, Sikandarabad Industrial Area,<br />
+            District Bulandshahr, Uttar Pradesh – 203206, India.
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span class="footer-bottom-text">
+      © 2024–2026 Dreamate · NapNest Industries Private Limited. All rights reserved.
+    </span>
+  </div>
+</footer>
+
+<!-- ANIMATIONS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+<!-- SIMPLE THANK-YOU HANDLER USING IFRAME -->
+<script>
+  function attachIframeThankYou() {
+    const form = document.getElementById('contact-form');
+    const statusEl = document.getElementById('form-status');
+    const submitBtn = document.getElementById('submit-btn');
+    const iframe = document.getElementById('hidden_iframe');
+
+    if (!form || !iframe) return;
+
+    form.addEventListener('submit', function () {
+      if (statusEl) {
+        statusEl.textContent = '';
+        statusEl.className = 'form-status';
+      }
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.classList.add('is-loading');
+        submitBtn.querySelector('span').textContent = 'Submitting...';
+      }
+    });
+
+    iframe.addEventListener('load', function () {
+      if (statusEl) {
+        statusEl.textContent = 'Thank you! Your enquiry has been submitted.';
+        statusEl.classList.add('form-status--success');
+      }
+      form.reset();
+
+      setTimeout(function () {
+        window.location.reload();
+      }, 2000);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', attachIframeThankYou);
+</script>
+
+</body>
+</html>
